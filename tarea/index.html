@@ -1,0 +1,35 @@
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+$(":button#boton").click(function() {
+if ($(":text#texto").attr("value").match(/^[0-9]+$/)) {
+alert("Correcto");
+}
+else {alert("Ingresar solamente numeros");}
+});
+});
+
+$(document).ready(function() {
+$(":button#boton2").click(function() {
+if ($(":text#texto1").attr("value").match(/^[a-z]+$/i)) {
+alert("Correcto");
+}
+else {alert("Ingresar solamente letras");}
+});
+});
+</script>
+
+</head>
+<body>
+	<h1>Ingrese los datos solicitados</h1>
+<input type="text" id="texto">
+<input type="button" id="boton" value="Enviar numero telefonico">
+<br>
+<br>
+<input type="text" id="texto1">
+<input type="button" id="boton2" value="Enviar Nombre Completo">
+</body>
+</html>
